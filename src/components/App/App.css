@@ -1,6 +1,9 @@
-.flex-container {
-  height: 300px;
-  width: 300px;
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  display: flex;
 }
 
 .img-container {
@@ -34,6 +37,7 @@
   background-color: black;
   color: white;
   font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
   position: absolute;
   top: 50%;
   left: 50%;

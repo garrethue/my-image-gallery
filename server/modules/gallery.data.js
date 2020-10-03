@@ -2,13 +2,13 @@ const galleryItems = [
   {
     id: 1,
     path: "images/library.jpeg",
-    description: "Photo of me in San Fran.",
+    description: "I got to tour the Library of Trinity College Dublin.",
     likes: 0,
   },
   {
     id: 2,
     path: "images/cliffs-of-moor.jpeg",
-    description: "Photo of the Cliffs of Moor when I was in Ireland.",
+    description: "Photo of the Cliffs of Moher when I was in Ireland.",
     likes: 0,
   },
   {
@@ -21,7 +21,7 @@ const galleryItems = [
     id: 4,
     path: "images/coachella-wheel.jpeg",
     description:
-      "The famous Coachella wheel. This was after the last act of the last night.",
+      "The Coachella ferris wheel. This was taken after the last act of the last night.",
     likes: 0,
   },
 ];
