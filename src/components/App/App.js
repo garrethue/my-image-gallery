@@ -23,7 +23,6 @@ class App extends Component {
   };
 
   updateLike = (id, numLikes) => {
-    console.log(id, numLikes);
     axios
       .put(`/gallery/like/${id}`, {
         likes: numLikes,
