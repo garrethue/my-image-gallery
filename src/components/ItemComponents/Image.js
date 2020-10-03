@@ -1,10 +1,13 @@
 import React, { Fragment, useState } from "react";
 
 export default function Image(props) {
-  const [isShown, setIsShown] = useState(true);
+  const [isDescriptionShown, setisDescriptionShown] = useState(true);
   return (
-    <div onClick={() => setIsShown(!isShown)} className="img-container">
-      {isShown ? (
+    <div
+      onClick={() => setisDescriptionShown(!isDescriptionShown)}
+      className="img-container"
+    >
+      {isDescriptionShown ? (
         <img src={props.imgObj.path} alt="..." className="image" />
       ) : (
         <Fragment>
