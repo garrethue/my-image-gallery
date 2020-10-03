@@ -13,16 +13,26 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   background-color: grey;
+  grid-gap: 1em;
 }
 
 .wrapper > div:nth-child(odd) {
   background-color: greenyellow;
+  position: relative;
+  border: black 2px solid;
+}
+
+.item-child {
+  border: blue 2px solid;
+}
+.item {
+  border: red 2px solid;
 }
 
 /*CSS below for image swapping effects. This was used in conjunction with conditional rendering to obtain the desired effect*/
 .img-container {
   position: relative;
-  width: 50%;
+  width: 70%;
 }
 
 .img-container:hover {
