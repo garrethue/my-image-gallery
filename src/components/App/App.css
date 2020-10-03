@@ -1,5 +1,7 @@
 body {
   font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  padding: 15px;
 }
 
 .App-title {
@@ -12,27 +14,22 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  background-color: grey;
-  grid-gap: 1em;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 15px;
 }
 
-.wrapper > div:nth-child(odd) {
+/* wrapper CONTAINS item which CONTAINS child*/
+/* .wrapper > div:nth-child(odd) {
   background-color: greenyellow;
   position: relative;
   border: black 2px solid;
-}
-
-.item-child {
-  border: blue 2px solid;
-}
-.item {
-  border: red 2px solid;
-}
+} */
 
 /*CSS below for image swapping effects. This was used in conjunction with conditional rendering to obtain the desired effect*/
 .img-container {
   position: relative;
-  width: 70%;
+  width: 100%;
 }
 
 .img-container:hover {
@@ -41,6 +38,7 @@ body {
 
 .image {
   display: block;
+  border: black 1px solid;
   width: 100%;
   height: auto;
 }
@@ -72,4 +70,13 @@ body {
 /* button icons turn white when hovers */
 .btn-outline-primary:hover svg {
   color: white;
+}
+
+.number-of-likes {
+  color: white;
+}
+
+.expand-likes-container {
+  padding-left: 2px;
+  padding-top: 10px;
 }

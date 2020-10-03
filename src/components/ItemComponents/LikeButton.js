@@ -27,7 +27,9 @@ export default function LikeButton(props) {
           />
         </svg>
       </button>{" "}
-      Number of Likes: {props.imgObj.likes}
+      <span className="number-of-likes">
+        Number of Likes: {props.imgObj.likes}
+      </span>
     </Fragment>
   );
 }
