@@ -8,15 +8,25 @@ body {
   color: white;
 }
 
-.btn-outline-primary:hover svg {
-  color: white;
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  background-color: grey;
 }
-/* button icons turn white when hovers */
+
+.wrapper > div:nth-child(odd) {
+  background-color: greenyellow;
+}
 
 /*CSS below for image swapping effects. This was used in conjunction with conditional rendering to obtain the desired effect*/
 .img-container {
   position: relative;
   width: 50%;
+}
+
+.img-container:hover {
+  cursor: pointer;
 }
 
 .image {
@@ -33,10 +43,9 @@ body {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
+  transition: 1s ease;
   background-color: black;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .text {
@@ -49,4 +58,8 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+/* button icons turn white when hovers */
+.btn-outline-primary:hover svg {
+  color: white;
 }

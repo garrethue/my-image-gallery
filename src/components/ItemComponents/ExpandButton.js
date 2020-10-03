@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 export default function ExpandButton(props) {
   return (
     <Fragment>
-      <a href={props.imgObj.path} class="img-1">
+      <a href={props.imgObj.path} className="img-1">
         <button className="btn btn-outline-primary">
           <svg
             width="1em"

@@ -8,12 +8,20 @@ export default function Image(props) {
       className="img-container"
     >
       {isDescriptionShown ? (
-        <img src={props.imgObj.path} alt="..." className="image" />
+        <img
+          src={props.imgObj.path}
+          alt={props.imgObj.description}
+          className={`image ${props.imgObj.id}`}
+        />
       ) : (
         <Fragment>
-          <img src={props.imgObj.path} alt="..." className="image" />
-          <div class="overlay">
-            <div class="text">Hello World</div>
+          <img
+            src={props.imgObj.path}
+            alt={props.imgObj.description}
+            className={`image ${props.imgObj.id}`}
+          />
+          <div className="overlay">
+            <div className="text">{props.imgObj.description}</div>
           </div>
         </Fragment>
       )}
