@@ -34,6 +34,7 @@ body {
 
 .img-container:hover {
   cursor: pointer;
+  opacity: 0.95;
 }
 
 .image {
@@ -53,12 +54,12 @@ body {
   width: 100%;
   transition: 1s ease;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 1.6vw; /*Dynamically changes the font size based on browser width*/
   position: absolute;
   top: 50%;
   left: 50%;

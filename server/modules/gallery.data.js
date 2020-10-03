@@ -31,6 +31,13 @@ const galleryItems = [
       "New Year's day in San Francisco. I ran about 15 miles that day around SF, touring the city. I had an out-of-body experience running over the Golden Gate Bridge.",
     likes: 0,
   },
+  {
+    id: 6,
+    path: "images/medora.jpeg",
+    description:
+      "Me doing yoga in Medora. Fun fact: The official Medora instagram requested to use this image for advertising campaigns.",
+    likes: 0,
+  },
 ];
 
 module.exports = galleryItems;
