@@ -13,10 +13,23 @@ class App extends Component {
   }; //get data on initial load
 
   getData = () => {
-    axios.get("/gallery/").then((res) => {
-      const allImageItems = res.data;
-      this.setState({ imageItems: allImageItems });
-    });
+    axios
+      .get("/gallery/")
+      .then((res) => {
+        const allImageItems = res.data;
+        this.setState({ imageItems: allImageItems });
+      })
+      .catch((err) => console.log(err));
+  };
+
+  updateLike = (id, numLikes) => {
+    console.log(id, numLikes);
+    axios
+      .put(`/gallery/like/${id}`, {
+        likes: numLikes,
+      })
+      .then(this.getData())
+      .catch((error) => console.log(error));
   };
 
   render() {
@@ -26,7 +39,10 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br />
-        <GalleryList imageItems={this.state.imageItems} />
+        <GalleryList
+          updateLike={this.updateLike}
+          imageItems={this.state.imageItems}
+        />
       </div>
     );
   }

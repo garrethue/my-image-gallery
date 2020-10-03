@@ -1,11 +1,14 @@
 import React, { Fragment, useState } from "react";
 
-export default function LikeButton() {
+export default function LikeButton(props) {
   //use isShown to create hover effect for this button
   const [isShown, setIsShown] = useState(false);
   return (
     <Fragment>
       <button
+        onClick={(event) =>
+          props.updateLike(props.imgObj.id, props.imgObj.likes)
+        }
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}
         className={isShown ? "btn btn-danger" : "btn btn-outline-danger"}
@@ -24,7 +27,7 @@ export default function LikeButton() {
           />
         </svg>
       </button>{" "}
-      Number of Likes: TODO GARRET
+      Number of Likes: {props.imgObj.likes}
     </Fragment>
   );
 }

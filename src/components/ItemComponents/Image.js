@@ -1,12 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 export default function Image(props) {
   return (
-    <div className="img-container">
-      <img src={props.imgObj.path} alt="..." className="img-thumbnail image" />
-      <div className="overlay">
-        <div className="img-text">{props.imgObj.description}</div>
-      </div>
-    </div>
+    <Fragment>
+      <img src={props.imgObj.path} alt="..." className="image" />
+    </Fragment>
   );
 }
