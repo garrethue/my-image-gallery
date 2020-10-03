@@ -1,11 +1,12 @@
 import React from "react";
-import LikeButton from "./buttons/LikeButton";
+import LikeButton from "./ItemComponents/LikeButton";
+import Image from "./ItemComponents/Image";
 
 export default function GalleryItem(props) {
   console.log(props);
   return (
     <div className="item">
-      <img src={props.imgObj.path} alt="..." className="img-thumbnail" />
+      <Image imgObj={props.imgObj} />
       <LikeButton />
     </div>
   );

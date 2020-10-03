@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 
 export default function LikeButton() {
+  //use isShown to create hover effect for this button
   const [isShown, setIsShown] = useState(false);
   return (
     <Fragment>
@@ -23,6 +24,7 @@ export default function LikeButton() {
           />
         </svg>
       </button>
+      Number of Likes: TODO GARRET
     </Fragment>
   );
 }
