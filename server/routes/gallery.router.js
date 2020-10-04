@@ -46,6 +46,22 @@ router.post("/add-to-gallery", async (req, res) => {
     res.sendStatus(500);
     console.log(err.message);
   }
+}); // END POST Route
+
+//DELETE Route
+router.delete("/delete-an-item/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deleteItem = await pool.query("DELETE FROM gallery WHERE id=$1", [
+      id,
+    ]);
+    res.sendStatus(200);
+  } catch (err) {
+    res.sendStatus(500);
+    console.log(err.message);
+  }
 });
+
+// END DELETE Route
 
 module.exports = router;
