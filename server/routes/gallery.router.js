@@ -25,7 +25,7 @@ router.put("/like/:id", async (req, res) => {
 // GET Route
 router.get("/", async (req, res) => {
   try {
-    const allImages = await pool.query("SELECT * FROM gallery");
+    const allImages = await pool.query("SELECT * FROM gallery ORDER BY id");
     res.json(allImages.rows);
   } catch (err) {
     res.sendStatus(500);
