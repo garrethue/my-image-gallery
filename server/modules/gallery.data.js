@@ -71,7 +71,7 @@ const galleryItems = [
     id: 11,
     path: "images/vienna-palace.jpeg",
     description:
-      "I went for a 13-mile run around the Schönbrunn Palace in Vienna, Austria (2017). It's beautiful!",
+      "I went for a 13-mile run around Vienna, Austria, and found the the Schönbrunn Palace (2017). It's beautiful!",
     likes: 0,
   },
   {
