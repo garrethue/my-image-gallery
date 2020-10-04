@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import LikeButton from "./ItemComponents/LikeButton";
 import Image from "./ItemComponents/Image";
 import ExpandButton from "./ItemComponents/ExpandButton";

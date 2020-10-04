@@ -2,27 +2,27 @@ const galleryItems = [
   {
     id: 1,
     path: "images/library.jpeg",
-    description: "I toured the Library of Trinity College Dublin.",
+    description: "I toured the Library of Trinity College Dublin (2018).",
     likes: 0,
   },
   {
     id: 2,
     path: "images/cliffs-of-moor.jpeg",
-    description: "Photo of the Cliffs of Moher when I was in Ireland.",
+    description: "Photo of the Cliffs of Moher when I was in Ireland (2018).",
     likes: 0,
   },
   {
     id: 3,
     path: "images/coachella3.jpeg",
     description:
-      "Me doing what everybody does at Coachella: posing for those pics.",
+      "Me doing what everybody does at Coachella: posing for those pics (2019).",
     likes: 0,
   },
   {
     id: 4,
     path: "images/coachella-wheel.jpeg",
     description:
-      "The Coachella ferris wheel. This was taken after the last act of the last night.",
+      "The Coachella Ferris wheel. This was taken after the last act of the last night in 2019.",
     likes: 0,
   },
   {
@@ -36,14 +36,14 @@ const galleryItems = [
     id: 6,
     path: "images/medora.jpeg",
     description:
-      "Me doing yoga in Medora. Fun fact: The official Medora instagram requested to use this image for advertising campaigns.",
+      "Me doing yoga in Medora (2020). Fun fact: The official Medora instagram requested to use this image for advertising campaigns.",
     likes: 0,
   },
   {
     id: 7,
     path: "images/MississippiHike.jpeg",
     description:
-      "Some of my close friends I met in Mississippi went on a hike/tour around the Vicksburg Military Park. It was gorgeous.",
+      "Some of my close friends I met in Mississippi went on a hike/tour around the Vicksburg Military Park (2019). It was gorgeous.",
     likes: 0,
   },
   {
@@ -57,35 +57,35 @@ const galleryItems = [
     id: 9,
     path: "images/proof1.jpeg",
     description:
-      "Part 1 of 2 of a mathematical proof I did a couple weeks back. Fun fact: I like to learn about mathematics and its Computer Science applications",
+      "Part 1 of 2 of a mathematical proof I did a couple weeks back (2020). I like to learn about mathematics and its Computer Science applications recreationally.",
     likes: 0,
   },
   {
     id: 10,
     path: "images/proof2.jpeg",
     description:
-      "Part 2 of 2 of a mathematical proof I did a couple weeks back.",
+      "Part 2 of 2 of a mathematical proof I did a couple weeks back. Currently halfway through a discrete mathematics textbook. Next will be linear algebra.",
     likes: 0,
   },
   {
     id: 11,
     path: "images/vienna-palace.jpeg",
     description:
-      "I went for a 13-mile run around the Schönbrunn Palace in Vienna, Austria. Google it. It's beautiful!",
+      "I went for a 13-mile run around the Schönbrunn Palace in Vienna, Austria (2017). Google it. It's beautiful!",
     likes: 0,
   },
   {
     id: 12,
-    path: "images/blackmetalgarret.jpeg",
+    path: "images/nola.jpeg",
     description:
-      "Halloween 2019 I dressed up of a version of me if I was into black/death metal.",
+      "When I lived in the South, I freqently went to New Orleans (2019). Besides the smell, I loved it there.",
     likes: 0,
   },
   {
     id: 13,
-    path: "images/bday.jpeg",
+    path: "images/southnature.jpeg",
     description:
-      "Me on my 27th birthday. I went to Chicago for a music festival and to see a close friend. I saw one of my favorite musical artists, Robyn.",
+      "If there is one thing I'll miss about the South, it'll be the perpertual greenness (2019).",
     likes: 0,
   },
 ];
