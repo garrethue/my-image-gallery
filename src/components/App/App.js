@@ -3,6 +3,7 @@ import "./App.css";
 import axios from "axios";
 import GalleryList from "../GalleryList";
 import InputForm from "../InputForm";
+import Uploader from "../Uploader";
 
 class App extends Component {
   state = {
@@ -50,6 +51,8 @@ class App extends Component {
         </header>
         <hr />
         <InputForm getData={this.getData} />
+        <Uploader />
+        <br />
         <GalleryList
           updateLike={this.updateLike}
           imageItems={this.state.imageItems}

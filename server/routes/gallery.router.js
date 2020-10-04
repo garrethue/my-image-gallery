@@ -48,6 +48,23 @@ router.post("/add-to-gallery", async (req, res) => {
   }
 }); // END POST Route
 
+//POST Route
+router.post("/uppy-upload", async (req, res) => {
+  try {
+    console.log("made it!");
+    console.log(req);
+    // const { path, description } = req.body;
+    // const addPost = await pool.query(
+    //   "INSERT INTO gallery (path, description) VALUES ($1, $2) RETURNING *",
+    //   [path, description]
+    // );
+    // res.sendStatus(201);
+  } catch (err) {
+    // res.sendStatus(500);
+    console.log(err.message);
+  }
+}); // END POST Route
+
 //DELETE Route
 router.delete("/delete-an-item/:id", async (req, res) => {
   try {
