@@ -12,7 +12,8 @@
     "pool": "^0.4.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "^3.4.0"
+    "react-scripts": "^3.4.0",
+    "uppy": "^1.21.2"
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
