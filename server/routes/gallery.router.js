@@ -33,4 +33,12 @@ router.get("/", async (req, res) => {
   }
 }); // END GET Route
 
+//POST Route
+router.post("/add-an-image", async (req, res) => {
+  try {
+  } catch (err) {
+    console.log(err.message);
+  }
+});
+
 module.exports = router;
