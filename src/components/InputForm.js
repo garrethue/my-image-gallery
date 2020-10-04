@@ -12,6 +12,8 @@ export default function InputForm(props) {
       .post("/gallery/add-to-gallery", { path, description })
       .then(props.getData())
       .catch((err) => console.log(err));
+    setDescription("");
+    setPath("");
   };
 
   return (

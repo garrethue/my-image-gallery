@@ -33,10 +33,12 @@ class App extends Component {
   };
 
   deleteItem = (id) => {
-    axios
-      .delete(`/gallery/delete-an-item/${id}`)
-      .then(this.getData())
-      .catch((error) => console.log(error));
+    if (window.confirm("Are you sure you want to delete this item?")) {
+      axios
+        .delete(`/gallery/delete-an-item/${id}`)
+        .then(this.getData())
+        .catch((error) => console.log(error));
+    }
   };
 
   render() {
