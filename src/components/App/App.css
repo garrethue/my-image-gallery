@@ -59,7 +59,7 @@ body {
 
 .text {
   color: white;
-  font-size: 1.6vw; /*Dynamically changes the font size based on browser width*/
+  font-size: 1.5vw; /*Dynamically changes the font size based on browser width*/
   position: absolute;
   top: 50%;
   left: 50%;
