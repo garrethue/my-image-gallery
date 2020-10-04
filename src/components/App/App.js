@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import axios from "axios";
 import GalleryList from "../GalleryList";
+import InputForm from "../InputForm";
 
 class App extends Component {
   state = {
@@ -37,6 +38,8 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Gallery of my life</h1>
         </header>
+        <hr />
+        <InputForm getData={this.getData} />
         <GalleryList
           updateLike={this.updateLike}
           imageItems={this.state.imageItems}
