@@ -32,6 +32,15 @@ class App extends Component {
       .catch((error) => console.log(error));
   };
 
+  deleteItem = (id) => {
+    if (window.confirm("Are you sure you want to delete this item?")) {
+      axios
+        .delete(`/gallery/delete-an-item/${id}`)
+        .then(this.getData())
+        .catch((error) => console.log(error));
+    }
+  };
+
   render() {
     return (
       <div className="App">
@@ -43,6 +52,7 @@ class App extends Component {
         <GalleryList
           updateLike={this.updateLike}
           imageItems={this.state.imageItems}
+          deleteItem={this.deleteItem}
         />
       </div>
     );

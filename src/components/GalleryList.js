@@ -7,6 +7,7 @@ export default function GalleryList(props) {
       {props.imageItems.map((imgObj) => (
         <GalleryItem
           updateLike={props.updateLike}
+          deleteItem={props.deleteItem}
           key={imgObj.id}
           imgObj={imgObj}
         />
