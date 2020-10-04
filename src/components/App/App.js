@@ -23,6 +23,7 @@ class App extends Component {
       .catch((err) => console.log(err));
   };
 
+  //pass in the item id and its current number of likes, once the server does logic, update the state by calling getData()
   updateLike = (id, numLikes) => {
     axios
       .put(`/gallery/like/${id}`, {

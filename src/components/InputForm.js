@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useState } from "react";
 
 export default function InputForm(props) {
-  console.log(props);
   const [path, setPath] = useState("");
   const [description, setDescription] = useState("");
 
@@ -15,7 +14,6 @@ export default function InputForm(props) {
     setDescription("");
     setPath("");
   };
-
   return (
     <div className="form-container">
       <h3 id="form-header" className="text-center mt-1">
