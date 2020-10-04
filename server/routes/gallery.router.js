@@ -33,4 +33,19 @@ router.get("/", async (req, res) => {
   }
 }); // END GET Route
 
+//POST Route
+router.post("/add-to-gallery", async (req, res) => {
+  try {
+    const { path, description } = req.body;
+    const addPost = await pool.query(
+      "INSERT INTO gallery (path, description) VALUES ($1, $2) RETURNING *",
+      [path, description]
+    );
+    res.sendStatus(201);
+  } catch (err) {
+    res.sendStatus(500);
+    console.log(err.message);
+  }
+});
+
 module.exports = router;
