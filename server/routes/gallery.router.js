@@ -60,8 +60,6 @@ router.delete("/delete-an-item/:id", async (req, res) => {
     res.sendStatus(500);
     console.log(err.message);
   }
-});
-
-// END DELETE Route
+}); // END DELETE Route
 
 module.exports = router;
