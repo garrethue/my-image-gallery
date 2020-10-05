@@ -3,6 +3,8 @@ import "./App.css";
 import axios from "axios";
 import GalleryList from "../GalleryList";
 import InputForm from "../InputForm";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Nav from "../Nav";
 
 class App extends Component {
   state = {
@@ -45,6 +47,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div>
+          <Nav />
+        </div>
         <header className="App-header">
           <h1 className="App-title">Gallery of my life</h1>
         </header>
