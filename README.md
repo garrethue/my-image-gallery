@@ -27,6 +27,8 @@ Open a browser and navigate to localhost:3000
 
 To add an image, enter an image url in the image url text field and add an optional description. Then press the 'Add' button.
 
+To view a description, click on the image.
+
 Click the heart icon below the image to like a photo.
 
 Click the garbage can icon below the image to delete the image.
