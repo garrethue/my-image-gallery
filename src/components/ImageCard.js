@@ -36,7 +36,8 @@ export default function MediaCard(props) {
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {props.imgObj.description}
-            <div className="number-of-likes">Likes: {props.imgObj.likes}</div>
+            <br />
+            <span className="number-of-likes">Likes: {props.imgObj.likes}</span>
           </Typography>
         </CardContent>
       </CardActionArea>
