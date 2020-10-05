@@ -4,7 +4,8 @@ _Duration: 2 day_
 
 Image Gallery is a simple image gallery app, allowing one to add, delete, and like images.
 
-##Deployed Version
+## Deployed Version
+
 URL: https://mighty-badlands-71531.herokuapp.com/
 
 ## Installation
