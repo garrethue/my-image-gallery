@@ -18,8 +18,8 @@ body {
   align-items: center;
   column-gap: 10px; /*gap between the cards horizontally*/
   row-gap: 35px; /*gap between the cards vertically*/
-  margin-left: 1.3em; /*Move the cards over to the right*/
-  margin-right: 1em;
+  margin-left: 1em; /*Move the cards over to the right*/
+  margin-right: 1.2em;
 }
 
 #form-header {
