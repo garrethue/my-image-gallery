@@ -29,7 +29,7 @@ class App extends Component {
       .put(`/gallery/like/${id}`, {
         likes: numLikes,
       })
-      .then((res) => this.getData())
+      .then(() => this.getData())
       .catch((error) => console.log(error));
   };
 
@@ -37,7 +37,7 @@ class App extends Component {
     if (window.confirm("Are you sure you want to delete this item?")) {
       axios
         .delete(`/gallery/delete-an-item/${id}`)
-        .then((res) => this.getData())
+        .then(() => this.getData())
         .catch((error) => console.log(error));
     }
   };

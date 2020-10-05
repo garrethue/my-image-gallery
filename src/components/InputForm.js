@@ -13,7 +13,7 @@ export default function InputForm(props) {
     event.preventDefault();
     axios
       .post("/gallery/add-to-gallery", { path, description, title })
-      .then((res) => props.getData())
+      .then(() => props.getData())
       .catch((err) => console.log(err));
     setDescription("");
     setPath("");
