@@ -35,4 +35,8 @@ Click the garbage can icon below the image to delete the image.
 
 ## Screenshot
 
+Base Version:
 ![image](https://i.imgur.com/WIRRVmt.png)
+
+Material-Ui Version:
+![image](https://github.com/garrethue/react-gallery/blob/feature-materialui2/basic-calculator.png)
