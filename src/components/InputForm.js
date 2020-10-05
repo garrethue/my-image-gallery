@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 
 export default function InputForm(props) {
+  console.log(props);
   //set up state for this component and bring in App.js component thru props
   const [path, setPath] = useState("");
   const [description, setDescription] = useState("");
@@ -12,7 +13,7 @@ export default function InputForm(props) {
     event.preventDefault();
     axios
       .post("/gallery/add-to-gallery", { path, description, title })
-      .then(props.getData())
+      .then((res) => props.getData())
       .catch((err) => console.log(err));
     setDescription("");
     setPath("");

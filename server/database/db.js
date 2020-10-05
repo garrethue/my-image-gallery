@@ -1,5 +1,4 @@
 /* Configure postgres and export it so that EVERY file in our project can use our database connection */
-
 const pg = require("pg");
 const url = require("url");
 
