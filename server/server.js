@@ -8,7 +8,13 @@ const cors = require("cors");
 /** ---------- MIDDLEWARE ---------- **/
 app.use(cors());
 app.use(bodyParser.json()); // needed for axios requests
-app.use(express.static("build"));
+
+if (process.env.NODE_ENV == "production") {
+  app.use(express.static("./build"));
+} else {
+  //set up static page
+  app.use(express.static("./public"));
+}
 
 /** ---------- EXPRESS ROUTES ---------- **/
 app.use("/gallery", gallery);
