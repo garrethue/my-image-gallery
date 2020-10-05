@@ -27,7 +27,7 @@ export default function InputForm(props) {
           id="title"
           className="form-control"
           value={title}
-          placeholder="Give your post a title!"
+          placeholder="Give your image a title!"
           onChange={(event) => setTitle(event.target.value)}
         />
         <input

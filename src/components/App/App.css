@@ -18,7 +18,7 @@ body {
   align-items: center;
   column-gap: 10px; /*gap between the cards horizontally*/
   row-gap: 35px; /*gap between the cards vertically*/
-  margin-left: 1em; /*Move the cards over to the right*/
+  margin-left: 1.3em; /*Move the cards over to the right*/
   margin-right: 1em;
 }
 
@@ -35,6 +35,10 @@ hr {
 
 .form-control {
   margin-right: 5px;
+}
+
+.form-container {
+  margin-bottom: 25px;
 }
 
 /*override materialui styling*/
