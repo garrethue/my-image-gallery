@@ -2,9 +2,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import RestoreIcon from "@material-ui/icons/Restore";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
+import HomeIcon from "@material-ui/icons/Home";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
 const useStyles = makeStyles({
   root: {
@@ -32,12 +32,12 @@ export default function Nav() {
       <BottomNavigationAction
         className={classes.custom}
         label="Home"
-        icon={<RestoreIcon />}
+        icon={<HomeIcon />}
       />
       <BottomNavigationAction
         className={classes.custom}
         label="About"
-        icon={<FavoriteIcon />}
+        icon={<AccountCircleIcon />}
       />
     </BottomNavigation>
   );

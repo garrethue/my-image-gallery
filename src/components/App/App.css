@@ -5,6 +5,7 @@ body {
 }
 
 .App-title {
+  margin-top: 10px;
   text-align: center;
   background-color: black;
   color: white;
@@ -46,7 +47,6 @@ hr {
   justify-content: center;
 }
 
-#outlined-basic {
-  border: white 1px solid;
-  background-color: white;
+.number-of-likes {
+  font-weight: bold;
 }
