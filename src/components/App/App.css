@@ -16,7 +16,9 @@ body {
   grid-template-rows: auto;
   justify-content: center;
   align-items: center;
-  grid-gap: 15px;
+  column-gap: 10px; /*gap between the cards horizontally*/
+  row-gap: 15px; /*gap between the cards vertically*/
+  margin-left: 50px; /*Move the cards over to the right*/
 }
 
 #form-header {
@@ -100,7 +102,8 @@ hr {
 }
 
 .number-of-likes {
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .expand-likes-container {
