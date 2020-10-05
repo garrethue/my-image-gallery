@@ -44,7 +44,9 @@ hr {
   background-color: white;
 }
 
-button {
+#delete-button,
+#expand-button,
+#like-button {
   height: 40px;
   width: 40px;
 }

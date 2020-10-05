@@ -6,6 +6,7 @@ export default function LikeButton(props) {
   return (
     <Fragment>
       <button
+        id="like-button"
         onClick={(event) =>
           props.updateLike(props.imgObj.id, props.imgObj.likes)
         }

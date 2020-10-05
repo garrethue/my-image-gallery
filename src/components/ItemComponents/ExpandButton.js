@@ -4,7 +4,7 @@ export default function ExpandButton(props) {
   return (
     <Fragment>
       <a href={props.imgObj.path} className="img-1">
-        <button className="btn btn-outline-primary">
+        <button id="expand-button" className="btn btn-outline-primary">
           <svg
             width="1em"
             height="1em"
