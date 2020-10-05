@@ -33,6 +33,10 @@ Click the heart icon below the image to like a photo.
 
 Click the garbage can icon below the image to delete the image.
 
+## Technologies
+
+PostgreSQL, PG, Pool, Cors, Express, Node, React, Bootstrap, Material-UI
+
 ## Screenshot
 
 Base Version:
