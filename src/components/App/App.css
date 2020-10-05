@@ -67,6 +67,7 @@ hr {
   border: black 1px solid;
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .overlay {
