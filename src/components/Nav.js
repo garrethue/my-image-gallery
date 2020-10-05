@@ -31,18 +31,13 @@ export default function Nav() {
     >
       <BottomNavigationAction
         className={classes.custom}
-        label="Recents"
+        label="Home"
         icon={<RestoreIcon />}
       />
       <BottomNavigationAction
         className={classes.custom}
-        label="Favorites"
+        label="About"
         icon={<FavoriteIcon />}
-      />
-      <BottomNavigationAction
-        className={classes.custom}
-        label="Nearby"
-        icon={<LocationOnIcon />}
       />
     </BottomNavigation>
   );

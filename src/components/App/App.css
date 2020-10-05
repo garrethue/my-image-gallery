@@ -41,6 +41,11 @@ hr {
   margin-bottom: 25px;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
 /*override materialui styling*/
 
 #delete-button {
