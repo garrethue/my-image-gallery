@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 
 export default function Image(props) {
+  //create state and toggle true/false values to see description when user clicks
   const [isDescriptionShown, setisDescriptionShown] = useState(true);
   return (
     <div
