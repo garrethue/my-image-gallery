@@ -5,7 +5,6 @@ body {
 }
 
 .App-title {
-  margin-top: 10px;
   text-align: center;
   background-color: black;
   color: white;
@@ -25,7 +24,6 @@ body {
 
 #form-header {
   color: white;
-  margin-top: 0;
 }
 
 hr {
@@ -49,4 +47,10 @@ hr {
 
 .number-of-likes {
   font-weight: bold;
+}
+
+.about {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
 }
