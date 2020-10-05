@@ -100,7 +100,8 @@ hr {
 }
 
 .number-of-likes {
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .expand-likes-container {
