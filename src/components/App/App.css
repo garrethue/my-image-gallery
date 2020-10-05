@@ -24,7 +24,6 @@ body {
 
 #form-header {
   color: white;
-  margin-top: 0;
 }
 
 hr {
@@ -41,77 +40,17 @@ hr {
   margin-bottom: 25px;
 }
 
-/*override materialui styling*/
-#delete-button {
-  border: #f50057 1px solid;
-}
-
-#outlined-basic {
-  border: white 1px solid;
-  background-color: white;
-}
-
-#delete-button,
-#expand-button,
-#like-button {
-  height: 40px;
-  width: 40px;
-}
-
-/*CSS below for image swapping effects. This was used in conjunction with conditional rendering to obtain the desired effect*/
-.img-container {
-  position: relative;
-  width: 100%;
-}
-
-.img-container:hover {
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-.image {
-  display: block;
-  border: black 1px solid;
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  transition: 1s ease;
-  background-color: black;
-  opacity: 0.7;
-}
-
-.text {
-  color: white;
-  font-size: 1.5vw; /*Dynamically changes the font size based on browser width*/
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-/* button icons turn white when hovers */
-.btn-outline-primary:hover svg {
-  color: white;
+.nav-container {
+  display: flex;
+  justify-content: center;
 }
 
 .number-of-likes {
-  color: black;
   font-weight: bold;
 }
 
-.expand-likes-container {
-  padding-left: 2px;
-  padding-top: 10px;
+.about {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
 }

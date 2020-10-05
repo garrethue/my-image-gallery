@@ -21,7 +21,7 @@ export default function InputForm(props) {
   };
   return (
     <div className="form-container">
-      <h3 id="form-header" className="text-center mt-1">
+      <h3 id="form-header" className="text-center mt-3 mb-3">
         Add to the Gallery:
       </h3>
       <form className="d-flex mb-3" onSubmit={onSubmitForm}>
