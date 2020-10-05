@@ -34,6 +34,7 @@ hr {
   margin-right: 5px;
 }
 
+/*override materialui styling*/
 #delete-button {
   border: #f50057 1px solid;
 }
