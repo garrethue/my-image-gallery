@@ -36,10 +36,10 @@ router.get("/", async (req, res) => {
 //POST Route
 router.post("/add-to-gallery", async (req, res) => {
   try {
-    const { path, description } = req.body;
+    const { path, description, title } = req.body;
     const addPost = await pool.query(
-      "INSERT INTO gallery (path, description) VALUES ($1, $2) RETURNING *",
-      [path, description]
+      "INSERT INTO gallery (path, description, title) VALUES ($1, $2, $3) RETURNING *",
+      [path, description, title]
     );
     res.sendStatus(201);
   } catch (err) {
