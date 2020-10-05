@@ -1,7 +1,7 @@
 body {
   font-family: "Courier New", Courier, monospace;
   background-color: black;
-  padding: 25px;
+  padding: 2em;
 }
 
 .App-title {
@@ -19,7 +19,7 @@ body {
   column-gap: 10px; /*gap between the cards horizontally*/
   row-gap: 35px; /*gap between the cards vertically*/
   margin-left: 1em; /*Move the cards over to the right*/
-  margin-right: 1.2em;
+  margin-right: 1em;
 }
 
 #form-header {
