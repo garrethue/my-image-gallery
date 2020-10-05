@@ -2,10 +2,12 @@ import axios from "axios";
 import React, { useState } from "react";
 
 export default function InputForm(props) {
+  //set up state for this component and bring in App.js component thru props
   const [path, setPath] = useState("");
   const [description, setDescription] = useState("");
   const [title, setTitle] = useState("");
 
+  //submit the form
   const onSubmitForm = async (event) => {
     event.preventDefault();
     axios
