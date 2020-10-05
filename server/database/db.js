@@ -22,7 +22,7 @@ if (process.env.DATABASE_URL) {
     idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
   };
 } else {
-  const config = {
+  config = {
     user: "postgres",
     password: "password",
     host: "localhost",

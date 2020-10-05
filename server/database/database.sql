@@ -8,6 +8,7 @@ CREATE TABLE gallery (
 );
 
 --MaterialUI feature update..needed another column
+--Note: I directly changed the existing rows to have data in this column using postico
 ALTER TABLE gallery
 ADD COLUMN title VARCHAR(50) NOT NULL DEFAULT 'Title here!';
 
