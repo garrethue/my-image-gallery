@@ -10,6 +10,7 @@ import DeleteButton from "./Buttons/DeleteButton";
 import LikeButton from "./Buttons/LikeButton";
 import ExpandButton from "./Buttons/ExpandButton";
 
+//Stylize each card
 const useStyles = makeStyles({
   root: {
     maxWidth: 350,
@@ -21,7 +22,6 @@ const useStyles = makeStyles({
 
 export default function MediaCard(props) {
   const classes = useStyles();
-
   return (
     <Card className={classes.root}>
       <CardActionArea>
