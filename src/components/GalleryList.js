@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import GalleryItem from "./GalleryItem";
 import ImageCard from "./ImageCard.js";
 
 export default function GalleryList(props) {
@@ -8,12 +7,6 @@ export default function GalleryList(props) {
       {props.imageItems.map((imgObj) => {
         return (
           <Fragment>
-            {/* <GalleryItem
-              updateLike={props.updateLike}
-              deleteItem={props.deleteItem}
-              key={imgObj.id}
-              imgObj={imgObj}
-            /> */}
             <ImageCard
               updateLike={props.updateLike}
               deleteItem={props.deleteItem}

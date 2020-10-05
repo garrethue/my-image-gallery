@@ -7,6 +7,10 @@ CREATE TABLE gallery (
 	likes INTEGER NOT NULL DEFAULT 0
 );
 
+--MaterialUI feature update..needed another column
+ALTER TABLE gallery
+ADD COLUMN title VARCHAR(50) NOT NULL DEFAULT 'Title here!';
+
 --seed database
 INSERT INTO gallery(path, description, likes)
 VALUES ('images/library.jpeg', 'I toured the Library of Trinity College Dublin (2018).', 0);
