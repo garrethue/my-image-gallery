@@ -3,7 +3,6 @@ import "./App.css";
 import axios from "axios";
 import GalleryList from "../GalleryList";
 import InputForm from "../InputForm";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Nav from "../Nav";
 
 class App extends Component {
