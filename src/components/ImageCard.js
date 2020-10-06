@@ -25,21 +25,25 @@ export default function MediaCard(props) {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={props.imgObj.path}
-          title={props.imgObj.description}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {props.imgObj.title}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {props.imgObj.description}
-            <br />
-            <span className="number-of-likes">Likes: {props.imgObj.likes}</span>
-          </Typography>
-        </CardContent>
+        <a href={props.imgObj.path} className="img-1">
+          <CardMedia
+            className={classes.media}
+            image={props.imgObj.path}
+            title={props.imgObj.description}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {props.imgObj.title}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {props.imgObj.description}
+              <br />
+              <span className="number-of-likes">
+                Likes: {props.imgObj.likes}
+              </span>
+            </Typography>
+          </CardContent>
+        </a>
       </CardActionArea>
       <CardActions>
         <DeleteButton imgObj={props.imgObj} deleteItem={props.deleteItem} />
